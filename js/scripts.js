@@ -181,7 +181,7 @@ $(document).ready(function(){
       $('div#resultTitle').empty().append(mrsDallowayTitle);
       $('div#bookDescription').empty().append(mrsDallowayDes);
       $('div.no-show').slideDown();
-    } else if (genre === "literary" && authorGender === "male" && proseStyle === "proseImportant" && authorEra === "anyEra") {
+    } else if (genre === "literary" && authorGender === "male" && proseStyle === "proseImportant" && authorEra === "modern") {
       $('div.no-show').slideUp();
       $('div#resultImg').empty().append(oldManCover);
       $('div#resultTitle').empty().append(oldManTitle);
@@ -193,19 +193,19 @@ $(document).ready(function(){
       $('div#resultTitle').empty().append(asiLayDyingTitle);
       $('div#bookDescription').empty().append(asiLayDyingDes);
       $('div.no-show').slideDown();
-    } else if (genre === "literary" && authorGender === "male" && proseStyle ==="proseImportant" && authorEra === "contemperorary") {
+    } else if (genre === "literary" && authorGender === "male" && proseStyle ==="proseImportant" && authorEra === "modern") {
       $('div.no-show').slideUp();
       $('div#resultImg').empty().append(inherentViceCover);
       $('div#resultTitle').empty().append(inherentViceTitle);
       $('div#bookDescription').empty().append(inherentViceDes);
       $('div.no-show').slideDown();
-    } else if (genre === "literary" && authorGender === "male" && proseStyle === "proseUnimportant" && authorEra === "contemporary") {
+    } else if (genre === "literary" && authorGender === "male" && proseStyle === "proseUnimportant" && authorEra === "modern") {
       $('div.no-show').slideUp();
       $('div#resultImg').empty().append(infiniteJestCover);
       $('div#resultTitle').empty().append(infiniteJestTitle);
       $('div#bookDescription').empty().append(infiniteJestDes);
       $('div.no-show').slideDown();
-    } else if (genre === "mystery" && authorGender === "female" && authorEra === "contemporary") {
+    } else if (genre === "mystery" && authorGender === "female" && authorEra === "modern") {
       $('div.no-show').slideUp();
       $('div#resultImg').empty().append(harryPotterCover);
       $('div#resultTitle').empty().append(harryPotterTitle);
@@ -217,7 +217,7 @@ $(document).ready(function(){
       $('div#resultTitle').empty().append(andThenNoneTitle);
       $('div#bookDescription').empty().append(andThenNoneDes);
       $('div.no-show').slideDown();
-    } else if (genre === "mystery" && authorGender === "male" && proseStyle === proseUnimportant && authorEra === "anyEra") {
+    } else if (genre === "mystery" && authorGender === "male" && proseStyle === "proseUnimportant" && authorEra === "anyEra") {
       $('div.no-show').slideUp();
       $('div#resultImg').empty().append(houndOfBaskervillesCover);
       $('div#resultTitle').empty().append(houndOfBaskervillesTitle);
@@ -241,7 +241,7 @@ $(document).ready(function(){
       $('div#resultTitle').empty().append(farewellMyLovelyTitle);
       $('div#bookDescription').empty().append(farewellMyLovelyDes);
       $('div.no-show').slideDown();
-    } else if (genre === "thriller" && authorGender === "female" && authorEra === "contemporary") {
+    } else if (genre === "thriller" && authorGender === "female" && authorEra === "modern") {
       $('div.no-show').slideUp();
       $('div#resultImg').empty().append(cobabCover);
       $('div#resultTitle').empty().append(cobabTitle);
@@ -249,11 +249,11 @@ $(document).ready(function(){
       $('div.no-show').slideDown();
     } else if (genre === "thriller" && authorGender === "female" && authorEra === "anyEra") {
       $('div.no-show').slideUp();
-      $('div#resultImg').empty().append(andThenNoneTitle);
+      $('div#resultImg').empty().append(andThenNoneCover);
       $('div#resultTitle').empty().append(andThenNoneTitle);
       $('div#bookDescription').empty().append(andThenNoneDes);
       $('div.no-show').slideDown();
-    } else if (genre === "thriller" && authorGender === "male" && authorEra === "contemporary" && proseStyle === "proseUnimportant") {
+    } else if (genre === "thriller" && authorGender === "male" && authorEra === "modern" && proseStyle === "proseUnimportant") {
       $('div.no-show').slideUp();
       $('div#resultImg').empty().append(davinciCodeCover);
       $('div#resultTitle').empty().append(davinciCodeTitle);

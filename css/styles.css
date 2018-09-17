@@ -60,3 +60,7 @@ h1{
   margin-top:1em;
   margin-bottom:1em
 }
+
+.no-show {
+  display:none;
+}

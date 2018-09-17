@@ -62,7 +62,7 @@ var theStandTitle = ('<h3>The Stand<br><small>Stephen King</small></h3>')
 //Classics descriptions
 var greatExpectationsDes = ('<p>Philip Pirrip, nicknamed Pip, an orphan and the protagonist and narrator of Great Expectations. In his childhood, Pip dreamed of becoming a blacksmith like his kind brother-in-law, Joe Gargery. At Satis House, about age 8, he meets and falls in love with Estella, and tells Biddy that he wants to become a gentleman.</p>')
 var iliadDes = ('<p>Set during the Trojan War, the ten-year siege of the city of Troy (Ilium) by a coalition of Greek states, it tells of the battles and events during the weeks of a quarrel between King Agamemnon and the warrior Achilles.</p>')
-var janeEyreDes = ('<p><Primarily a bildungsroman, Jane Eyre follows the experiences of its eponymous heroine, including her growth to adulthood and her love for Mr. Rochester, the brooding master of Thornfield Hall. The novel revolutionized prose fiction in that the focus on Janes moral and spiritual development is told through an intimate, first-person narrative, where actions and events are coloured by a psychological intensity./p>')
+var janeEyreDes = ('<p>Primarily a bildungsroman, Jane Eyre follows the experiences of its eponymous heroine, including her growth to adulthood and her love for Mr. Rochester, the brooding master of Thornfield Hall. The novel revolutionized prose fiction in that the focus on Janes moral and spiritual development is told through an intimate, first-person narrative, where actions and events are coloured by a psychological intensity.</p>')
 var mrsDallowayDes = ('<p>A novel by Virginia Woolf that details a day in the life of Clarissa Dalloway, a fictional high-society woman in post–First World War England.</p>')
 var scarletLetterDes = ('<p>Set in 17th-century Puritan Massachusetts Bay Colony, during the years 1642 to 1649, it tells the story of Hester Prynne, who conceives a daughter through an affair and struggles to create a new life of repentance and dignity. As she struggles to raise her rambunctious daughter, Pearl, on her own, the father of her unborn child is revealed and is shown to be experiencing severe guilt. Through the scorn and judgment of the citizens and Roger Chillingworth (Hester husband), the two decide to remain together. Throughout the book, Hawthorne explores themes of legalism, sin, and guilt.</p>')
 //Fantasy descriptions
@@ -109,9 +109,162 @@ $(document).ready(function(){
     $('#name').empty().text(userName);
 
 
-    $('div#resultImg').empty().append(inherentViceCover);
-    $('div#resultTitle').empty().append(inherentViceTitle);
-    $('div#bookDescription').empty().append(inherentViceDes)
-    $('div.no-show').slideDown();
+    if (genre === "classic" && action === "exciting" && authorEra === "modern" && authorGender === "male") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(greatExpectationsCover);
+      $('div#resultTitle').empty().append(greatExpectationsTitle);
+      $('div#bookDescription').empty().append(greatExpectationsDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "classic" && authorEra === "anyEra" && authorGender === "female") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(janeEyreCover);
+      $('div#resultTitle').empty().append(janeEyreTitle);
+      $('div#bookDescription').empty().append(janeEyreDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "classic" && authorEra === "modern" && authorGender === "female") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(mrsDallowayCover);
+      $('div#resultTitle').empty().append(mrsDallowayTitle);
+      $('div#bookDescription').empty().append(mrsDallowayDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "classic" && action === "exciting" && authorEra === "anyEra" && authorGender === "male") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(illiadCover);
+      $('div#resultTitle').empty().append(iliadTitle);
+      $('div#bookDescription').empty().append(iliadDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "classic" && action === "notExciting" && authorGender === "male"){
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(scarletLetterCover);
+      $('div#resultTitle').empty().append(scarlettLetterTitle);
+      $('div#bookDescription').empty().append(scarletLetterDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "fantasy" && authorGender === "female"){
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(earthseaCover);
+      $('div#resultTitle').empty().append(eartheseaTitle);
+      $('div#bookDescription').empty().append(earthseaDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "fantasy" && authorGender === "male" && action === "notExciting" && authorEra === "anyEra") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(faerieQueeneCover);
+      $('div#resultTitle').empty().append(faerieQueeneTitle);
+      $('div#bookDescription').empty().append(faerieQueeneDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "fantasy" && authorGender === "male" && age === "noYA") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(lotrCover);
+      $('div#resultTitle').empty().append(lotrTitle);
+      $('div#bookDescription').empty().append(lotrDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "fantasy" && authorGender === "male" && action === "notExciting" && authorEra === "modern" && proseStyle === "proseImportant") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(assassinCover);
+      $('div#resultTitle').empty().append(assassinTitle);
+      $('div#bookDescription').empty().append(assassinDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "fantasy" && authorGender === "male" && action === "exciting" && age === "YAOkay") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(mistbornCover);
+      $('div#resultTitle').empty().append(mistbornTitle);
+      $('div#bookDescription').empty().append(mistbornDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "literary" && authorGender === "female") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(killaMockingBirdCover);
+      $('div#resultTitle').empty().append(killaMockingBirdTitle);
+      $('div#bookDescription').empty().append(killaMockingBirdDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "literary" && authorGender === "male" && proseStyle === "proseImportant" && authorEra === "anyEra") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(oldManCover);
+      $('div#resultTitle').empty().append(oldManTitle);
+      $('div#bookDescription').empty().append(oldManDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "literary" && authorGender === "male" && proseStyle === "proseUnimportant" && authorEra === "anyEra") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(asiLayDyingCover);
+      $('div#resultTitle').empty().append(asiLayDyingTitle);
+      $('div#bookDescription').empty().append(asiLayDyingDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "literary" && authorGender === "male" && proseStyle ==="proseImportant" && authorEra === "contemperorary") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(inherentViceCover);
+      $('div#resultTitle').empty().append(inherentViceTitle);
+      $('div#bookDescription').empty().append(inherentViceDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "literary" && authorGender === "male" && proseStyle === "proseUnimportant" && authorEra === "contemporary") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(infiniteJestCover);
+      $('div#resultTitle').empty().append(infiniteJestTitle);
+      $('div#bookDescription').empty().append(infiniteJestDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "mystery" && authorGender === "female" && authorEra === "contemporary") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(harryPotterCover);
+      $('div#resultTitle').empty().append(harryPotterTitle);
+      $('div#bookDescription').empty().append(harryPotterDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "mystery" && authorGender === "female" && authorEra === "anyEra") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(andThenNoneCover);
+      $('div#resultTitle').empty().append(andThenNoneTitle);
+      $('div#bookDescription').empty().append(andThenNoneDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "mystery" && authorGender === "male" && proseStyle === proseUnimportant && authorEra === "anyEra") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(houndOfBaskervillesCover);
+      $('div#resultTitle').empty().append(houndOfBaskervillesTitle);
+      $('div#bookDescription').empty().append(houndOfBaskervillesDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "mystery" && authorGender === "male" && action === "notExciting" && authorEra === "modern") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(nameOfTheRoseCover);
+      $('div#resultTitle').empty().append(nameOfTheRoseTitle);
+      $('div#bookDescription').empty().append(nameOfTheRoseDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "mystery" && authorGender === "male" && action === "exciting" && authorEra === "modern") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(dragonTattooCover);
+      $('div#resultTitle').empty().append(dragonTattooTitle);
+      $('div#bookDescription').empty().append(dragonTattooDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "mystery" && authorGender === "male" && proseStyle === proseImportant) {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(farewellMyLovelyCover);
+      $('div#resultTitle').empty().append(farewellMyLovelyTitle);
+      $('div#bookDescription').empty().append(farewellMyLovelyDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "thriller" && authorGender === "female" && authorEra === "contemporary") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(cobabCover);
+      $('div#resultTitle').empty().append(cobabTitle);
+      $('div#bookDescription').empty().append(cobabDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "thriller" && authorGender === "female" && authorEra === "anyEra") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(andThenNoneTitle);
+      $('div#resultTitle').empty().append(andThenNoneTitle);
+      $('div#bookDescription').empty().append(andThenNoneDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "thriller" && authorGender === "male" && authorEra === "contemporary" && proseStyle === "proseUnimportant") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(davinciCodeCover);
+      $('div#resultTitle').empty().append(davinciCodeTitle);
+      $('div#bookDescription').empty().append(davinciCodeDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "thriller" && authorGender === "male" && age === "YAOkay") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(dragonTattooCover);
+      $('div#resultTitle').empty().append(dragonTattooTitle);
+      $('div#bookDescription').empty().append(dragonTattooDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "thriller" && authorGender === "male" && age== "noYA") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(theStandCover);
+      $('div#resultTitle').empty().append(theStandTitle);
+      $('div#bookDescription').empty().append(theStandDes);
+      $('div.no-show').slideDown();
+    }
   });
 });

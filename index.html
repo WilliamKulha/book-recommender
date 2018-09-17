@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Oswald" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -13,13 +13,154 @@
     <title>Book Recommender</title>
   </head>
   <body>
+    <div class="text-center amatic special-header">
+      <h1>William's Book Recommender</h1>
+    </div>
     <div class="container">
-
-
-
-
-
-
+      <div class="row">
+        <div class="col-sm-6">
+            <div class="custom-card light-bg">
+            <img src="img/reading.jpeg" class="card-img" alt="Two books laying open on a table">
+              <div class="card-container">
+                <h4>Have you ever gotten stuck trying to figure out what</h4>
+                <p>book to read next? You're not alone. Almost everyone faces the struggle at
+                one point or another. But have no fear! William's Book Recommender is here to help you
+                put all that trouble to bed. Simply answer the questions below and you'll have a great
+                book to read right away!</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="custom-card light-bg">
+              <div class="card-container">
+                <h4>Don't wanna do a quiz?</h4>
+                <p>Then I'll just recommend what I'm reading now. Jo Nesbo's <em>The Snowman</em>.
+                A bit of a mystery, a bit of a thriller, it ticks most of the boxes and I'm sure
+                you'll enjoy it.</p>
+              </div>
+              <img src="img/snowman.jpeg" class="card-img" alt="The cover of Jo Nesbo's The Snowman.">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="custom-card light-bg">
+            <div class="card-container">
+              <div class="page-header text-center">
+                <h3 class="amatic clickable" id="dropQuiz">The Quiz</h3>
+              </div>
+              <form id="userInput">
+                <fieldset>
+                  <!-- Asking for genre -->
+                  <div class="form-group">
+                    <label class="quiz-labels">What genre of book are you after?</label>
+                    <select class="form-control" id="genre">
+                      <option value="mystery">Mystery</option>
+                      <option value="thriller">Thriller</option>
+                      <option value="fantasy">Fantasy</option>
+                      <option value="literary">Literary Fiction</option>
+                      <option value="classic">Classics are more my style</option>
+                    </select>
+                  </div>
+                  <!--Asking how much action 2 options -->
+                  <div class="form-group">
+                    <label class="quiz-labels">How much action are you after?</label><br>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="action" value="1" checked>
+                        I don't care about how much action there is
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <input type="radio" name="action" value="2">
+                      I'm like, an action junkie
+                    </label>
+                    </div>
+                  </div>
+                  <!--Asking for what age group 2 options-->
+                  <div class="form-group">
+                    <label class="quiz-labels">Do you prefer reading YA or 'Adult' novels?</label><br>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="age" value="1" checked>
+                        Books for younger folks are fine
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="age" value="2">
+                        I don't wanna see anything that's written for kids!
+                      </label>
+                    </div>
+                  </div>
+                  <!--Asking for whether they want something newer or older or don't mind-->
+                  <div class="form-group">
+                    <label class="quiz-labels">Do you prefer more contemperorary authors?</label><br>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="authorera" value="1">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="authorera" value="2" checked>
+                        No / Don't care either way
+                      </label>
+                    </div>
+                  </div>
+                  <!--Asking whether prose style is important-->
+                  <div class="form-group">
+                    <label class="quiz-labels">How important is prose style?</label><br>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="prosestyle" value="1" checked>
+                        Very important
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="prosestyle" value="2">
+                        Not that important as long as the story's good!
+                      </label>
+                    </div>
+                  </div>
+                  <!--Asking whether they prefer female or male authors-->
+                  <div class="form-group">
+                    <label class="quiz-labels">Do you like female or male authors?</label><br>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="authorGender" value="m">
+                        Male authors
+                      </label>
+                    </div>
+                    <div class="radio-inline">
+                      <label>
+                        <input type="radio" name="authorGender" value="f">
+                        Female authors
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="quiz-labels">Lastly tell me a few things about yourself...</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="userName">Your Name</label>
+                    <input type="text" class="form-control" id="userName" placeholder="Vivian Darkbloom">
+                  </div>
+                  <div class="form-group">
+                    <label for="favDay">Your favorite date</label>
+                    <input id="favDay" class="form-control" type="date">
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-lg btn-primary">Recommendize!</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

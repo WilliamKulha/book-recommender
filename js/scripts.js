@@ -31,34 +31,34 @@ var davinciCodeCover = ('<img src="img/thriller/davincicode.jpeg" class="card-im
 //Don't forget dragon tattoo is also a thriller//
 var theStandCover = ('<img src="img/thriller/thestand.jpeg" class="card-img img-responsive" alt="The cover of The Stand">')
 //Classics Titles//
-var greatExpectationsTitle = ('<h3>Great Expectations<br><small>Charles Dickens</small></h3>')
-var iliadTitle = ('<h3>The Iliad<br><small>Homer</small></h3>')
-var janeEyreTitle = ('<h3>Jane Eyre<br><small>Charlotte Bronte</small></h3>')
-var mrsDallowayTitle = ('<h3>Mrs. Dalloway<br><small>Virginia Woolf</small></h3>')
-var scarlettLetterTitle = ('<h3>The Scarlet Letter<br><small>Nathaniel Hawthorne</small></h3>')
+var greatExpectationsTitle = ('<h3><a href=""><a href="https://amzn.to/2PGj18X">Great Expectations<br><small>Charles Dickens</small></a></h3>')
+var iliadTitle = ('<h3><a href="https://amzn.to/2MBkhIB">The Iliad<br><small>Homer</small></a></h3>')
+var janeEyreTitle = ('<h3><a href=https://amzn.to/2pgNVK2"">Jane Eyre<br><small>Charlotte Bronte</small></a></h3>')
+var mrsDallowayTitle = ('<h3><a href="https://amzn.to/2pf0u8t">Mrs. Dalloway<br><small>Virginia Woolf</small></a></h3>')
+var scarlettLetterTitle = ('<h3><a href="https://amzn.to/2MBkz29">The Scarlet Letter<br><small>Nathaniel Hawthorne</small></a></h3>')
 //Fantasy Titles//
-var assassinTitle = ('<h3>The Assassin(&apos;ex1&apos;)s Apprentice<br><small>Robin Hood</small></h3>')
-var eartheseaTitle = ('<h3>A Wizard of Earthsea<br><small>Ursula K. Le Guin</small></h3>')
-var faerieQueeneTitle =('<h3>The Faerie Queene<br><small>Edmund Spenser</small></h3>')
-var lotrTitle = ('<h3>The Lord of the Rings<br><small>J.R.R. Tolkien</small></h3>')
-var mistbornTitle = ('<h3>Mistborn<br><small>Brandon Sanderson</small></h3>')
+var assassinTitle = ('<h3><a href="https://amzn.to/2xhVGDB">The Assassin(&apos;ex1&apos;)s Apprentice<br><small>Robin Hood</small></a></h3>')
+var eartheseaTitle = ('<h3><a href="https://amzn.to/2xug3g6">A Wizard of Earthsea<br><small>Ursula K. Le Guin</small></a></h3>')
+var faerieQueeneTitle =('<h3><a href="https://amzn.to/2Ozu5Ez">The Faerie Queene<br><small>Edmund Spenser</small></a></h3>')
+var lotrTitle = ('<h3><a href="https://amzn.to/2QCZ5VK">The Lord of the Rings<br><small>J.R.R. Tolkien</small></a></h3>')
+var mistbornTitle = ('<h3><a href="https://amzn.to/2NhuEXc">Mistborn<br><small>Brandon Sanderson</small></a></h3>')
 //Literary Titles//
-var asiLayDyingTitle = ('<h3>As I lay Dying<br><small>William Faulkner</small></h3>')
-var inherentViceTitle = ('<h3>Inherent Vice<br><small>Thomas Pynchon</small></h3>')
-var infiniteJestTitle = ('<h3>Infinite Jest<br><small>David Foster Wallace</small></h3>')
-var killaMockingBirdTitle = ('<h3>To Kill a Mockingbird<br><small>Harper Lee</small></h3>')
-var oldManTitle = ('<h3>The Old Man and the Sea<br><small>Ernest Hemingway</small></h3>')
+var asiLayDyingTitle = ('<h3><a href="https://amzn.to/2D4DcvH">As I lay Dying<br><small>William Faulkner</small></a></h3>')
+var inherentViceTitle = ('<h3><a href="https://amzn.to/2xpBeQL">Inherent Vice<br><small>Thomas Pynchon</small></a></h3>')
+var infiniteJestTitle = ('<h3><a href="https://amzn.to/2Ov1xMw">Infinite Jest<br><small>David Foster Wallace</small></a></h3>')
+var killaMockingBirdTitle = ('<h3><a href="https://amzn.to/2D7e3AD">To Kill a Mockingbird<br><small>Harper Lee</small></a></h3>')
+var oldManTitle = ('<h3><a href="https://amzn.to/2D5x5HI">The Old Man and the Sea<br><small>Ernest Hemingway</small></a></h3>')
 //Mystery Titles//
-var farewellMyLovelyTitle = ('<h3>Farewell My Lovely<br><small>Raymond Chandler</small></h3>')
-var dragonTattooTitle = ('<h3>The Girl with the Dragon Tattoo<br><small>Stieg Larsson</small></h3>')
-var harryPotterTitle = ('<h3>Harry Potter and the Sorceror(&apos;ex1&apos;)s Stone<br><small>J.K. Rowling</small></h3>')
-var houndOfBaskervillesTitle = ('<h3>The Hound of Baskervilles<br><small>Arthur Conan Doyle</small></h3>')
-var nameOfTheRoseTitle = ('<h3>The Name of the Rose<br><small>Umberto Eco</small></h3>')
+var farewellMyLovelyTitle = ('<h3><a href="https://amzn.to/2NR8k68">Farewell My Lovely<br><small>Raymond Chandler</small></a></h3>')
+var dragonTattooTitle = ('<h3><a href="https://amzn.to/2MGa25S">The Girl with the Dragon Tattoo<br><small>Stieg Larsson</small></a></h3>')
+var harryPotterTitle = ('<h3><a href="https://amzn.to/2NjH1Sp">Harry Potter and the Sorceror(&apos;ex1&apos;)s Stone<br><small>J.K. Rowling</small></a></h3>')
+var houndOfBaskervillesTitle = ('<h3><a href="https://amzn.to/2xiakea">The Hound of Baskervilles<br><small>Arthur Conan Doyle</small></a></h3>')
+var nameOfTheRoseTitle = ('<h3><a href="https://amzn.to/2D33H4Y">The Name of the Rose<br><small>Umberto Eco</small></a></h3>')
 //Thriller Titles
-var andThenNoneTitle = ('<h3>And Then There Were None<br><small>Agatha Christie</small></h3>')
-var cobabTitle = ('<h3>Children of Blood and Bone<br><small>Tomi Adeyemi</small></h3>')
-var davinciCodeTitle = ('<h3>The Da Vinci Code<br><small>Dan Brown</small></h3>')
-var theStandTitle = ('<h3>The Stand<br><small>Stephen King</small></h3>')
+var andThenNoneTitle = ('<h3><a href="https://amzn.to/2QE7QPf">And Then There Were None<br><small>Agatha Christie</small></a></h3>')
+var cobabTitle = ('<h3><a href="https://amzn.to/2QCZtDG">Children of Blood and Bone<br><small>Tomi Adeyemi</small></a></h3>')
+var davinciCodeTitle = ('<h3><a href="https://amzn.to/2PF1M82">The Da Vinci Code<br><small>Dan Brown</small></a></h3>')
+var theStandTitle = ('<h3><a href="https://amzn.to/2MGh4HC">The Stand<br><small>Stephen King</small></a></h3>')
 //Classics descriptions
 var greatExpectationsDes = ('<p>Philip Pirrip, nicknamed Pip, an orphan and the protagonist and narrator of Great Expectations. In his childhood, Pip dreamed of becoming a blacksmith like his kind brother-in-law, Joe Gargery. At Satis House, about age 8, he meets and falls in love with Estella, and tells Biddy that he wants to become a gentleman.</p>')
 var iliadDes = ('<p>Set during the Trojan War, the ten-year siege of the city of Troy (Ilium) by a coalition of Greek states, it tells of the battles and events during the weeks of a quarrel between King Agamemnon and the warrior Achilles.</p>')
@@ -169,11 +169,17 @@ $(document).ready(function(){
       $('div#resultTitle').empty().append(mistbornTitle);
       $('div#bookDescription').empty().append(mistbornDes);
       $('div.no-show').slideDown();
-    } else if (genre === "literary" && authorGender === "female") {
+    } else if (genre === "literary" && authorGender === "female" && age === "YAOkay") {
       $('div.no-show').slideUp();
       $('div#resultImg').empty().append(killaMockingBirdCover);
       $('div#resultTitle').empty().append(killaMockingBirdTitle);
       $('div#bookDescription').empty().append(killaMockingBirdDes);
+      $('div.no-show').slideDown();
+    } else if (genre === "literary" && authorGender === "female" && age === "noYA") {
+      $('div.no-show').slideUp();
+      $('div#resultImg').empty().append(mrsDallowayCover);
+      $('div#resultTitle').empty().append(mrsDallowayTitle);
+      $('div#bookDescription').empty().append(mrsDallowayDes);
       $('div.no-show').slideDown();
     } else if (genre === "literary" && authorGender === "male" && proseStyle === "proseImportant" && authorEra === "anyEra") {
       $('div.no-show').slideUp();

@@ -68,3 +68,9 @@ h1{
 #userInput {
   display:none;
 }
+
+.result-card {
+  width:50%;
+  margin:0 auto;
+
+}

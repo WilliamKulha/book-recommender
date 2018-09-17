@@ -98,10 +98,20 @@ $(document).ready(function(){
   });
   $('form#userInput').submit(function(event){
     event.preventDefault();
+    var genre = $('#genre').val();
+    var action = $("input:radio[name=action]:checked").val();
+    var age = $("input:radio[name=age]:checked").val();
+    var authorEra = $("input:radio[name=authorera]:checked").val();
+    var proseStyle = $("input:radio[name=prosestyle]:checked").val();
+    var authorGender = $("input:radio[name=authorGender]:checked").val();
+    var userName = $("input#userName").val();
+    var userFavDay = $("#favDay").val();
+    $('#name').empty().text(userName);
 
-    $('div#resultImg').append(inherentViceCover);
-    $('div#resultTitle').append(inherentViceTitle);
-    $('div#bookDescription').append(inherentViceDes)
+
+    $('div#resultImg').empty().append(inherentViceCover);
+    $('div#resultTitle').empty().append(inherentViceTitle);
+    $('div#bookDescription').empty().append(inherentViceDes)
     $('div.no-show').slideDown();
   });
 });
